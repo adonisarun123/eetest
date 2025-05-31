@@ -109,11 +109,49 @@ ezyelders-nextjs/
 └── styles/               # Global styles
 ```
 
-## 🌐 Deployment
+## 🚀 Deployment
 
-This app is optimized for deployment on Vercel:
+### Deploy to Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adonisarun123/ezyelders-nextjs)
+1. **Create GitHub Repository**
+   - Go to [GitHub](https://github.com/new)
+   - Create a new repository named `ezyelders-nextjs`
+   - Make it public
+   - Don't initialize with README (we already have one)
+
+2. **Push to GitHub**
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/ezyelders-nextjs.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. **Deploy to Vercel**
+   - Go to [Vercel](https://vercel.com)
+   - Sign in with your GitHub account
+   - Click "New Project"
+   - Import your `ezyelders-nextjs` repository
+   - Configure project:
+     - Framework Preset: Next.js
+     - Root Directory: ./
+     - Build Command: `npm run build` (default)
+     - Output Directory: `.next` (default)
+   - Click "Deploy"
+
+4. **Your site will be live at:**
+   - `https://ezyelders-nextjs.vercel.app` (or your custom domain)
+
+### Environment Variables (if needed)
+
+No environment variables are required for this project.
+
+### Custom Domain
+
+To add a custom domain:
+1. Go to your Vercel project settings
+2. Navigate to "Domains"
+3. Add your custom domain
+4. Follow the DNS configuration instructions
 
 ## 📱 Contact
 
