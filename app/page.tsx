@@ -105,8 +105,8 @@ export default function HomePage() {
             >
               <div className="relative w-full h-[400px] lg:h-[500px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1582593981935-a87a0644caec?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-                  alt="Happy seniors enjoying activities"
+                  src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+                  alt="Happy Indian seniors enjoying activities"
                   fill
                   className="rounded-2xl shadow-2xl object-cover"
                   priority

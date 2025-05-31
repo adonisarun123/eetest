@@ -150,11 +150,11 @@ export default function GalleryPage() {
       </section>
 
       {/* Filter and View Options */}
-      <section className="py-8 bg-white sticky top-[73px] z-30 shadow-md">
+      <section className="py-4 bg-white sticky top-[73px] z-30 shadow-md">
         <div className="section-padding">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
-              <div className="flex items-center gap-2 mb-3">
+              <div className="flex items-center gap-2 mb-2">
                 <Filter className="w-5 h-5 text-gray-600" />
                 <h3 className="font-semibold text-gray-800">Filter:</h3>
               </div>
