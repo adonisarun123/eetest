@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EzyElders - Next.js Senior Community Website
 
-## Getting Started
+A modern, responsive Next.js website for EzyElders - a platform dedicated to enriching the lives of senior citizens through wellness programs, social activities, and community engagement.
 
-First, run the development server:
+## 🚀 Built with Next.js 14
 
+This is the Next.js version of the EzyElders website, offering improved performance, SEO, and developer experience.
+
+## 🌟 Features
+
+- **Next.js App Router**: Modern routing with server components
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Accessibility First**: Large fonts (18px base), high contrast mode, and senior-friendly UI
+- **Performance Optimized**: 
+  - Server-side rendering for better SEO
+  - Automatic image optimization with Next.js Image
+  - Code splitting and lazy loading
+- **Interactive Components**: 
+  - Horizontal scrollable event calendar
+  - Testimonial carousel with dot navigation
+  - Image gallery with lightbox functionality
+  - Collapsible FAQ accordion
+- **Comprehensive Pages**:
+  - Home with hero section and service overview
+  - About Us with mission, vision, and team
+  - Our Offerings with detailed service pages
+  - Events with calendar view
+  - Gallery with image zoom
+  - Testimonials with carousel
+  - Contact with form and map
+  - And more...
+- **WhatsApp Integration**: Sticky support button for instant assistance
+- **SEO Optimized**: Built-in Next.js SEO features with structured data
+
+## 🎨 Design
+
+- **Color Palette**: Lavender, Sage Green, Sky Blue, Warm Beige
+- **Typography**: Large, readable fonts with clear hierarchy
+- **UI Elements**: Rounded corners, soft shadows, minimal whitespace
+- **Animations**: Smooth transitions using Framer Motion
+- **Senior-Focused**: Images and content specifically for elderly users
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/adonisarun123/ezyelders-nextjs.git
+cd ezyelders-nextjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Lucide React** - Icons
+- **Next.js Image** - Optimized images
 
-## Deploy on Vercel
+## 🛠️ Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm start` - Runs the built app in production mode
+- `npm run lint` - Runs ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
+
+```
+ezyelders-nextjs/
+├── app/                    # Next.js App Router pages
+│   ├── about/             # About page
+│   ├── offerings/         # Services pages
+│   ├── contact/           # Contact page
+│   ├── events/            # Events page
+│   └── ...                # Other pages
+├── components/            # React components
+│   ├── Header.tsx         # Navigation header
+│   ├── Footer.tsx         # Footer with links
+│   ├── WhatsAppButton.tsx # Floating WhatsApp button
+│   └── ClientWrapper.tsx  # Client-side wrapper
+├── public/                # Static assets
+└── styles/               # Global styles
+```
+
+## 🌐 Deployment
+
+This app is optimized for deployment on Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adonisarun123/ezyelders-nextjs)
+
+## 📱 Contact
+
+- **Phone**: +91-73496 53339
+- **Email**: info@ezyhelpers.com
+- **Address**: No 10, 5th B Cross, Sharadamba Nagar, Jalahalli, Bangalore - 560013
+
+## 🤝 Contributing
+
+This project is part of EzyHelpers. For contributions or queries, please contact the team.
+
+## 📄 License
+
+This project is proprietary to EzyElders/EzyHelpers.
+
+## 🔄 Comparison with React Version
+
+### Improvements over React (CRA) version:
+- **Better Performance**: Server-side rendering and automatic code splitting
+- **Improved SEO**: Built-in meta tags and structured data support
+- **Optimized Images**: Automatic image optimization and lazy loading
+- **Smaller Bundle Size**: Only loads what's needed for each page
+- **Better Developer Experience**: Fast refresh and built-in TypeScript support
+- **Production Ready**: Optimized for Vercel deployment

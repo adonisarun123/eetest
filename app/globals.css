@@ -1,26 +1,95 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom base styles for accessibility */
+@layer base {
+  html {
+    font-size: 18px; /* Larger base font size for better readability */
+  }
+  
+  body {
+    @apply antialiased bg-warm-beige/10;
+  }
+  
+  /* High contrast mode styles */
+  .high-contrast {
+    @apply bg-black text-white;
+  }
+  
+  .high-contrast * {
+    @apply border-white;
+  }
+  
+  .high-contrast .bg-lavender {
+    @apply bg-purple-800;
+  }
+  
+  .high-contrast .bg-sage {
+    @apply bg-green-800;
+  }
+  
+  .high-contrast .bg-sky {
+    @apply bg-blue-800;
+  }
+  
+  .high-contrast .bg-warm-beige {
+    @apply bg-yellow-800;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom component classes */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-dark-lavender text-white rounded-full font-semibold text-lg 
+           hover:bg-purple-700 transition-colors duration-200 
+           focus:outline-none focus:ring-4 focus:ring-lavender;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-sage text-white rounded-full font-semibold text-lg 
+           hover:bg-dark-sage transition-colors duration-200 
+           focus:outline-none focus:ring-4 focus:ring-green-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+  
+  .section-padding {
+    @apply px-4 py-8 md:px-8 md:py-12 lg:px-12 lg:py-16;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  @apply outline-none ring-4 ring-dark-lavender ring-opacity-50;
+}
+
+/* Image zoom on hover */
+.image-zoom {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-lavender;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-dark-lavender rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-700;
 }
